@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poddar's Stone Gallery | Premium Marble, Tiles, Granite & Quartz | Hyderabad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: {
+                            50: '#f9f8f6',
+                            100: '#f0ece1',
+                            200: '#ded5c2',
+                            300: '#c5b69b',
+                            400: '#a89472',
+                            500: '#8c7755',
+                            600: '#736043',
+                            700: '#5c4d37',
+                            800: '#4a3f2f',
+                            900: '#3d3427',
+                            950: '#231e16'
+                        },
+                        accent: {
+                            gold: '#b89753',
+                            darkGold: '#997a3d'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f9f8f6;
+            color: #3d3427;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0ece1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a89472;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-stone-200 selection:text-stone-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-stone-950 text-stone-200 text-xs sm:text-sm py-2 px-4 text-center font-light tracking-wide flex flex-wrap justify-center items-center gap-4 border-b border-stone-800">
+        <span><i class="fas fa-certificate text-accent-gold mr-1.5"></i> Serving Hyderabad Since 1995</span>
+        <span class="hidden md:inline text-stone-600">|</span>
+        <span><i class="fas fa-map-marker-alt text-accent-gold mr-1.5"></i> Shamshabad & LB Nagar</span>
+        <span class="hidden md:inline text-stone-600">|</span>
+        <span><i class="fas fa-phone-alt text-accent-gold mr-1.5"></i> +91 9059900443</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header id="navbar" class="sticky top-0 z-40 bg-stone-50/95 backdrop-blur-md border-b border-stone-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-stone-900 flex items-center justify-center border-2 border-accent-gold shadow-md group-hover:scale-105 transition-transform">
+                    <span class="text-accent-gold font-serif font-bold text-lg">PSG</span>
+                </div>
+                <div>
+                    <span class="block font-serif font-bold text-lg sm:text-xl tracking-tight text-stone-900">PODDAR'S STONE GALLERY</span>
+                    <span class="block text-[10px] sm:text-xs tracking-widest text-stone-600 uppercase">Marble • Tiles • Granite • Quartz</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-8 font-medium text-stone-800 text-sm">
+                <a href="#home" class="hover:text-accent-gold transition-colors">Home</a>
+                <a href="#about" class="hover:text-accent-gold transition-colors">Legacy & Locations</a>
+                <a href="#products" class="hover:text-accent-gold transition-colors">Products & Collections</a>
+                <a href="#projects" class="hover:text-accent-gold transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-accent-gold transition-colors">Contact Us</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="tel:9059900443" class="bg-stone-900 hover:bg-stone-800 text-stone-100 border border-accent-gold/40 px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wider uppercase transition-all shadow-sm hover:shadow flex items-center gap-2">
+                    <i class="fas fa-phone-alt text-accent-gold text-xs"></i>
+                    <span>Call 09059900443</span>
+                </a>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-stone-900 hover:text-accent-gold focus:outline-none p-2" aria-label="Toggle Menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-stone-100 border-b border-stone-200 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#home" class="block text-base font-medium text-stone-900 hover:text-accent-gold py-1 mobile-link">Home</a>
+            <a href="#about" class="block text-base font-medium text-stone-900 hover:text-accent-gold py-1 mobile-link">Legacy & Locations</a>
+            <a href="#products" class="block text-base font-medium text-stone-900 hover:text-accent-gold py-1 mobile-link">Products & Collections</a>
+            <a href="#projects" class="block text-base font-medium text-stone-900 hover:text-accent-gold py-1 mobile-link">Projects</a>
+            <a href="#contact" class="block text-base font-medium text-stone-900 hover:text-accent-gold py-1 mobile-link">Contact Us</a>
+            <div class="pt-4 border-t border-stone-300 flex flex-col gap-3">
+                <a href="tel:9059900443" class="w-full bg-stone-900 text-accent-gold text-center py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Call: 09059900443
+                </a>
+                <a href="https://wa.me/919059900443?text=Hello%20Poddar%20Stone%20Gallery,%20I%20want%20to%20inquire%20about%20your%20marbles,%20tiles%20and%20granite." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-b from-stone-200 via-stone-50 to-stone-100 py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#b89753_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-stone-200 px-4 py-1.5 rounded-full text-stone-800 text-xs font-semibold tracking-wider uppercase border border-stone-300">
+                        <i class="fas fa-star text-accent-gold"></i> Hyderabad's Premier Stone Destination Since 1995
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
+                        Exquisite Marble, Tiles, Granite & <span class="text-accent-gold italic">Quartz Slabs</span>
+                    </h1>
+                    <p class="text-stone-700 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Welcome to Poddar’s Stone Gallery. From luxurious Italian marble and highlighter tiles to heavy-duty granite and engineered quartz, we bring timeless elegance to residential and commercial spaces across Hyderabad.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#products" class="w-full sm:w-auto bg-stone-900 hover:bg-stone-800 text-stone-100 border border-accent-gold/40 px-8 py-4 rounded-xl font-medium text-center shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                            <span>Explore Catalog</span>
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/919059900443?text=Hi%20Poddar%20Stone%20Gallery,%20I%20want%20to%20view%20your%20latest%20marble%20and%20tile%20collections." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-medium text-center shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            <span>WhatsApp Catalog</span>
+                        </a>
+                    </div>
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-stone-200 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <span class="block font-serif font-bold text-2xl text-stone-900">30+</span>
+                            <span class="text-xs text-stone-600 uppercase tracking-wider">Years Experience</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif font-bold text-2xl text-stone-900">4,000+</span>
+                            <span class="text-xs text-stone-600 uppercase tracking-wider">Happy Clients</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif font-bold text-2xl text-stone-900">3 Units</span>
+                            <span class="text-xs text-stone-600 uppercase tracking-wider">Manufacturing Base</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-r from-accent-gold to-stone-400 rounded-3xl blur-lg opacity-30 animate-pulse"></div>
+                        <div class="relative bg-white p-3 rounded-3xl shadow-2xl border border-stone-200">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Luxury Marble and Granite Slabs" class="rounded-2xl w-full h-[420px] object-cover shadow-inner">
+                            <div class="absolute bottom-6 left-6 right-6 bg-stone-950/90 backdrop-blur-md p-4 rounded-2xl text-white border border-accent-gold/30">
+                                <span class="text-accent-gold text-xs font-semibold uppercase tracking-wider">Featured Collection</span>
+                                <h3 class="font-serif text-lg font-bold text-stone-100">Premium Italian Marble & Granite</h3>
+                                <p class="text-xs text-stone-300 mt-0.5">Showroom & Processing units in Shamshabad, LB Nagar & Medchal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy & Branch Locations Section -->
+    <section id="about" class="py-20 bg-stone-100 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent-gold font-semibold text-sm uppercase tracking-widest block mb-2">Established 1995</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Our Legacy & Hyderabad Locations</h2>
+                <div class="w-24 h-1 bg-accent-gold mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-700 mt-4 text-sm sm:text-base font-light">
+                    Poddar’s Stone Gallery has been the trusted name for architects, builders, and homeowners across Telangana. Explore our showrooms and state-of-the-art manufacturing units.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Showroom 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-stone-900 text-accent-gold flex items-center justify-center mb-4 text-lg">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-stone-900">Main Showroom</h3>
+                    <p class="text-xs font-semibold text-accent-gold mt-1">Shamshabad, Hyderabad</p>
+                    <p class="text-stone-600 text-xs mt-3 leading-relaxed">
+                        Our flagship gallery displaying vast ranges of imported marble, granite slabs, and quartz countertop samples.
+                    </p>
+                </div>
+
+                <!-- Showroom 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-stone-900 text-accent-gold flex items-center justify-center mb-4 text-lg">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-stone-900">Branch Gallery</h3>
+                    <p class="text-xs font-semibold text-accent-gold mt-1">LB Nagar, Hyderabad</p>
+                    <p class="text-stone-600 text-xs mt-3 leading-relaxed">
+                        Conveniently located branch showroom featuring exclusive highlighter tiles, bathroom ceramics, and flooring stones.
+                    </p>
+                </div>
+
+                <!-- Mfg Unit 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-stone-900 text-accent-gold flex items-center justify-center mb-4 text-lg">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-stone-900">Processing Units</h3>
+                    <p class="text-xs font-semibold text-accent-gold mt-1">Medchal & Cherlapally</p>
+                    <p class="text-stone-600 text-xs mt-3 leading-relaxed">
+                        Advanced automatic cutting, polishing, and custom sizing plants equipped with precision gangsaw technology.
+                    </p>
+                </div>
+
+                <!-- Mfg Unit 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-stone-900 text-accent-gold flex items-center justify-center mb-4 text-lg">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-stone-900">Quarry & Stock Unit</h3>
+                    <p class="text-xs font-semibold text-accent-gold mt-1">Karimnagar</p>
+                    <p class="text-stone-600 text-xs mt-3 leading-relaxed">
+                        Direct granite quarry sourcing and bulk storage facility ensuring uncompromised wholesale pricing for massive projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collections Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent-gold font-semibold text-sm uppercase tracking-widest block mb-2">Our Core Offerings</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Explore Our Stone & Tile Catalog</h2>
+                <div class="w-24 h-1 bg-accent-gold mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-700 mt-4 text-sm sm:text-base font-light">
+                    From current customer obsession 'Highlighter Tiles' to pristine white marble and tough granite, we house everything under one roof.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8">
+                    <button onclick="filterProducts('all')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-stone-900 text-stone-100 transition-all shadow-sm" data-filter="all">All Products</button>
+                    <button onclick="filterProducts('marble')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-stone-200 text-stone-800 hover:bg-stone-300 transition-all" data-filter="marble">Marble</button>
+                    <button onclick="filterProducts('tiles')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-stone-200 text-stone-800 hover:bg-stone-300 transition-all" data-filter="tiles">Highlighter & Designer Tiles</button>
+                    <button onclick="filterProducts('granite')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-stone-200 text-stone-800 hover:bg-stone-300 transition-all" data-filter="granite">Granite</button>
+                    <button onclick="filterProducts('quartz')" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-stone-200 text-stone-800 hover:bg-stone-300 transition-all" data-filter="quartz">Quartz</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Italian Marble -->
+                <div class="product-card group bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="marble">
+                    <div class="relative h-64 overflow-hidden bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Italian Marble Slabs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-950/80 backdrop-blur-sm text-accent-gold text-xs font-semibold px-3 py-1 rounded-full border border-accent-gold/30">Marble</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-accent-gold transition-colors">Imported & Indian Marble Slabs</h3>
+                            <p class="text-stone-600 text-xs font-mono mt-1">Ref: PSG-MBL-01 | Call: 09059900443</p>
+                            <p class="text-stone-700 text-sm mt-3 font-light leading-relaxed">
+                                Flawless mirror-polished white, beige, and Statuario marble slabs for luxurious flooring, living rooms, and grand staircases.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-stone-800 bg-stone-200/60 px-2.5 py-1 rounded-md">Custom Sizing</span>
+                            <button onclick="openInquiry('Imported & Indian Marble Slabs (Ref: PSG-MBL-01)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-sm"></i> Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Highlighter Tiles (Current Obsession) -->
+                <div class="product-card group bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="tiles">
+                    <div class="relative h-64 overflow-hidden bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80" alt="Highlighter Tiles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-950/80 backdrop-blur-sm text-accent-gold text-xs font-semibold px-3 py-1 rounded-full border border-accent-gold/30">Current Obsession</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-accent-gold transition-colors">Designer Highlighter Tiles</h3>
+                            <p class="text-stone-600 text-xs font-mono mt-1">Ref: PSG-TIL-01 | Call: 09059900443</p>
+                            <p class="text-stone-700 text-sm mt-3 font-light leading-relaxed">
+                                Stunning 3D and carved highlighter tiles designed to transform accent walls, TV units, and bathroom feature panels.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-stone-800 bg-stone-200/60 px-2.5 py-1 rounded-md">Trending Design</span>
+                            <button onclick="openInquiry('Designer Highlighter Tiles (Ref: PSG-TIL-01)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-sm"></i> Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Premium Granite -->
+                <div class="product-card group bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="granite">
+                    <div class="relative h-64 overflow-hidden bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f08f8?auto=format&fit=crop&w=700&q=80" alt="Granite Slabs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-950/80 backdrop-blur-sm text-accent-gold text-xs font-semibold px-3 py-1 rounded-full border border-accent-gold/30">Granite</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-accent-gold transition-colors">Black & Galaxy Granite Slabs</h3>
+                            <p class="text-stone-600 text-xs font-mono mt-1">Ref: PSG-GRN-01 | Call: 09059900443</p>
+                            <p class="text-stone-700 text-sm mt-3 font-light leading-relaxed">
+                                Heavy-duty Indian and imported granite in Jet Black, Tan Brown, and Absolute Black ideal for indestructible kitchen countertops and flooring.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-stone-800 bg-stone-200/60 px-2.5 py-1 rounded-md">Kitchen Tops</span>
+                            <button onclick="openInquiry('Black & Galaxy Granite Slabs (Ref: PSG-GRN-01)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-sm"></i> Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Engineered Quartz -->
+                <div class="product-card group bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="quartz">
+                    <div class="relative h-64 overflow-hidden bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80" alt="Engineered Quartz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-950/80 backdrop-blur-sm text-accent-gold text-xs font-semibold px-3 py-1 rounded-full border border-accent-gold/30">Quartz</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-accent-gold transition-colors">Engineered Quartz Countertops</h3>
+                            <p class="text-stone-600 text-xs font-mono mt-1">Ref: PSG-QRT-01 | Call: 09059900443</p>
+                            <p class="text-stone-700 text-sm mt-3 font-light leading-relaxed">
+                                Stain-resistant, non-porous engineered quartz slabs designed for modern minimalist kitchens and luxury vanity units.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-stone-800 bg-stone-200/60 px-2.5 py-1 rounded-md">Stain Resistant</span>
+                            <button onclick="openInquiry('Engineered Quartz Countertops (Ref: PSG-QRT-01)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-sm"></i> Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Wall Cladding Stone -->
+                <div class="product-card group bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="tiles">
+                    <div class="relative h-64 overflow-hidden bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80" alt="Wall Cladding" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-950/80 backdrop-blur-sm text-accent-gold text-xs font-semibold px-3 py-1 rounded-full border border-accent-gold/30">Cladding</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-accent-gold transition-colors">Natural Stone Wall Cladding</h3>
+                            <p class="text-stone-600 text-xs font-mono mt-1">Ref: PSG-CLD-01 | Call: 09059900443</p>
+                            <p class="text-stone-700 text-sm mt-3 font-light leading-relaxed">
+                                Textured slate, sandstone, and stacked stone veneers for stunning exterior elevations and feature lobby walls.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-stone-800 bg-stone-200/60 px-2.5 py-1 rounded-md">Exterior Elevation</span>
+                            <button onclick="openInquiry('Natural Stone Wall Cladding (Ref: PSG-CLD-01)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-sm"></i> Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Premium Ceramic & Floor Tiles -->
+                <div class="product-card group bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" data-category="tiles">
+                    <div class="relative h-64 overflow-hidden bg-stone-200">
+                        <img src="https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?auto=format&fit=crop&w=700&q=80" alt="Ceramic Floor Tiles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-stone-950/80 backdrop-blur-sm text-accent-gold text-xs font-semibold px-3 py-1 rounded-full border border-accent-gold/30">Floor Tiles</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-stone-900 group-hover:text-accent-gold transition-colors">Large Format Vitrified Tiles</h3>
+                            <p class="text-stone-600 text-xs font-mono mt-1">Ref: PSG-VRT-01 | Call: 09059900443</p>
+                            <p class="text-stone-700 text-sm mt-3 font-light leading-relaxed">
+                                Glossy and matt finish large format vitrified tiles offering seamless elegance and effortless maintenance.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-4 border-t border-stone-200 flex items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-stone-800 bg-stone-200/60 px-2.5 py-1 rounded-md">Vitrified</span>
+                            <button onclick="openInquiry('Large Format Vitrified Tiles (Ref: PSG-VRT-01)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-medium px-4 py-2.5 rounded-xl transition-colors flex items-center gap-1.5 shadow-sm">
+                                <i class="fab fa-whatsapp text-sm"></i> Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Gallery Section -->
+    <section id="projects" class="py-20 bg-stone-100 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent-gold font-semibold text-sm uppercase tracking-widest block mb-2">Architectural Excellence</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Recent Projects & Installations</h2>
+                <div class="w-24 h-1 bg-accent-gold mx-auto mt-4 rounded-full"></div>
+                <p class="text-stone-700 mt-4 text-sm sm:text-base font-light">
+                    A glimpse of villas, commercial complexes, and luxury residences in Hyderabad adorned with our stones and tiles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-2xl aspect-video bg-stone-200 shadow">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Villa Flooring" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+                        <span class="text-accent-gold text-xs font-semibold uppercase tracking-wider">Banjara Hills Villa</span>
+                        <h4 class="text-white font-serif text-lg font-bold mt-1">Italian Marble Flooring</h4>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl aspect-video bg-stone-200 shadow">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80" alt="Feature Wall" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+                        <span class="text-accent-gold text-xs font-semibold uppercase tracking-wider">Jubilee Hills Residence</span>
+                        <h4 class="text-white font-serif text-lg font-bold mt-1">Highlighter Tile Accent Wall</h4>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl aspect-video bg-stone-200 shadow">
+                    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80" alt="Kitchen Counter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-6 text-center">
+                        <span class="text-accent-gold text-xs font-semibold uppercase tracking-wider">Gachibowli Apartment</span>
+                        <h4 class="text-white font-serif text-lg font-bold mt-1">Quartz Kitchen Countertop</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-stone-950 text-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-accent-gold font-semibold text-sm uppercase tracking-widest block">Get in Touch</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Visit Poddar’s Stone Gallery Today</h2>
+                    <p class="text-stone-300 font-light leading-relaxed">
+                        Have a residential or commercial project in mind? Connect with our stone experts in Shamshabad or LB Nagar, or request a quote directly via phone and WhatsApp.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <a href="tel:9059900443" class="flex items-center gap-4 text-stone-200 hover:text-accent-gold transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-stone-900 flex items-center justify-center text-accent-gold border border-stone-800"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <span class="block text-xs text-stone-400">Direct Call</span>
+                                <span class="font-semibold text-base">+91 9059900443</span>
+                            </div>
+                        </a>
+                        <a href="mailto:poddarstones123@gmail.com" class="flex items-center gap-4 text-stone-200 hover:text-accent-gold transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-stone-900 flex items-center justify-center text-accent-gold border border-stone-800"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="block text-xs text-stone-400">Email Address</span>
+                                <span class="font-semibold text-base">poddarstones123@gmail.com</span>
+                            </div>
+                        </a>
+                        <div class="flex items-start gap-4 text-stone-200">
+                            <div class="w-10 h-10 rounded-xl bg-stone-900 flex items-center justify-center text-accent-gold border border-stone-800 shrink-0"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="block text-xs text-stone-400">Main Location</span>
+                                <span class="font-semibold text-base">Shamshabad, Hyderabad, Telangana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-stone-900 p-8 rounded-3xl border border-stone-800 shadow-xl">
+                    <h3 class="font-serif text-2xl font-bold text-white mb-2">Quick Inquiry Form</h3>
+                    <p class="text-xs text-stone-400 mb-6">Fill out your details and we will respond instantly on WhatsApp.</p>
+                    <form onsubmit="submitGeneralInquiry(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">Your Full Name</label>
+                            <input type="text" id="gen-name" required class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accent-gold" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">Phone Number</label>
+                            <input type="tel" id="gen-phone" required class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accent-gold" placeholder="Enter 10-digit mobile number">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-stone-300 mb-1">Requirement (Marble, Tiles, Granite, Quartz)</label>
+                            <textarea id="gen-message" rows="3" required class="w-full bg-stone-950 border border-stone-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accent-gold resize-none" placeholder="Describe your requirement..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3.5 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-sm">
+                            <i class="fab fa-whatsapp text-lg"></i> Send Inquiry via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-900 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-stone-900 flex items-center justify-center border border-accent-gold">
+                    <span class="text-accent-gold font-serif font-bold text-sm">PSG</span>
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-sm text-stone-200">Poddar's Stone Gallery</span>
+                    <span class="block text-[10px] text-stone-500">Marble, Tiles, Granite & Quartz | Hyderabad</span>
+                </div>
+            </div>
+            <p>&copy; 2026 Poddar's Stone Gallery. All Rights Reserved. Since 1995.</p>
+            <div class="flex gap-4">
+                <a href="tel:9059900443" class="hover:text-accent-gold transition-colors"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/919059900443" target="_blank" class="hover:text-accent-gold transition-colors"><i class="fab fa-whatsapp text-sm"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CRITICAL: Two small, fixed floating buttons at bottom-right corner (approx 15-20% smaller than oversized defaults) -->
+    <div class="fixed bottom-5 right-5 z-50 flex items-center gap-2.5">
+        <!-- Standard Blue Call Button with Phone Handset SVG Icon -->
+        <a href="tel:9059900443" aria-label="Call Poddar Stone Gallery" class="w-11 h-11 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all transform hover:scale-105 group relative">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span class="absolute right-14 bg-stone-900 text-stone-100 text-[11px] font-medium px-2.5 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow pointer-events-none">Call: 09059900443</span>
+        </a>
+
+        <!-- Standard Green WhatsApp Button with Official WhatsApp SVG Icon -->
+        <a href="https://wa.me/919059900443?text=Hello%20Poddar%20Stone%20Gallery,%20I%20want%20to%20inquire%20about%20your%20products." target="_blank" aria-label="Chat on WhatsApp" class="w-11 h-11 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all transform hover:scale-105 group relative">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span class="absolute right-14 bg-emerald-900 text-stone-100 text-[11px] font-medium px-2.5 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow pointer-events-none">Chat on WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Product Inquiry Modal -->
+    <div id="inquiry-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-stone-50 max-w-md w-full rounded-3xl p-6 shadow-2xl border border-stone-200 relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeInquiry()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-stone-200 text-stone-800 hover:bg-stone-900 hover:text-white flex items-center justify-center transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="mb-4">
+                <span class="text-xs font-semibold text-accent-gold uppercase tracking-wider">Poddar's Stone Gallery</span>
+                <h3 class="font-serif text-2xl font-bold text-stone-900 mt-1">Product Inquiry</h3>
+                <p id="modal-product-name" class="text-xs text-stone-600 mt-0.5 font-mono"></p>
+            </div>
+            <form onsubmit="submitModalInquiry(event)" class="space-y-4">
+                <input type="hidden" id="modal-product-input">
+                <div>
+                    <label class="block text-xs font-semibold text-stone-800 mb-1">Your Full Name</label>
+                    <input type="text" id="modal-name" required class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm text-stone-900 focus:outline-none focus:border-accent-gold" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-stone-800 mb-1">City / Location in Hyderabad</label>
+                    <input type="text" id="modal-city" required class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm text-stone-900 focus:outline-none focus:border-accent-gold" placeholder="e.g. Banjara Hills, Gachibowli">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-stone-800 mb-1">Required Quantity / Details</label>
+                    <textarea id="modal-details" rows="3" class="w-full bg-white border border-stone-300 rounded-xl px-4 py-3 text-sm text-stone-900 focus:outline-none focus:border-accent-gold resize-none" placeholder="Mention approx sq.ft or measurements..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3.5 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-sm">
+                    <i class="fab fa-whatsapp text-lg"></i> Continue to WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function filterProducts(category) {
+            const cards = document.querySelectorAll('.product-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                if(btn.getAttribute('data-filter') === category) {
+                    btn.classList.remove('bg-stone-200', 'text-stone-800');
+                    btn.classList.add('bg-stone-900', 'text-stone-100');
+                } else {
+                    btn.classList.remove('bg-stone-900', 'text-stone-100');
+                    btn.classList.add('bg-stone-200', 'text-stone-800');
+                }
+            });
+
+            cards.forEach(card => {
+                if(category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function openInquiry(productTitle) {
+            const modal = document.getElementById('inquiry-modal');
+            const productInput = document.getElementById('modal-product-input');
+            const productName = document.getElementById('modal-product-name');
+            
+            productInput.value = productTitle;
+            productName.innerText = "Inquiring about: " + productTitle;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeInquiry() {
+            const modal = document.getElementById('inquiry-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('inquiry-modal');
+            if (e.target === modal) {
+                closeInquiry();
+            }
+        });
+
+        function submitModalInquiry(e) {
+            e.preventDefault();
+            const product = document.getElementById('modal-product-input').value;
+            const name = document.getElementById('modal-name').value;
+            const city = document.getElementById('modal-city').value;
+            const details = document.getElementById('modal-details').value;
+
+            const text = `Hello Poddar Stone Gallery,%0A%0AI want to inquire about:%0A*${product}*%0A%0A*Name:* ${name}%0A*Location:* ${city}%0A*Details:* ${details}`;
+            window.open(`https://wa.me/919059900443?text=${text}`, '_blank');
+            closeInquiry();
+        }
+
+        function submitGeneralInquiry(e) {
+            e.preventDefault();
+            const name = document.getElementById('gen-name').value;
+            const phone = document.getElementById('gen-phone').value;
+            const message = document.getElementById('gen-message').value;
+
+            const text = `Hello Poddar Stone Gallery,%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Requirement:* ${message}`;
+            window.open(`https://wa.me/919059900443?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
